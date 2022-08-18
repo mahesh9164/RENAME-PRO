@@ -9,22 +9,22 @@ async def start(client,message):
 	await message.reply_text(text =f"""
 	Hello 👋 {message.from_user.first_name }
 	
-☞ I'm A Telegram File & Video Rename Bot With Permanent Thumbnail Support.
+**☞ I'm A Telegram File & Video Rename Bot With Permanent Thumbnail Support.**
 
-☞ Send Me Any Telegram File/Video! 
+**☞ Send Me Any Telegram File/Video!** 
 
-☞ Send A Photo To Save As Permanent Thumbnail!
+**☞ Send A Photo To Save As Permanent Thumbnail!**
 
-☞ Select Your Desired/Required Option! 
+**☞ Select Your Desired/Required Option!** 
 
-☞ Then Wait Till The Process Get Completed!
+**☞ Then Wait Till The Process Get Completed!**
 
-☞ Maintained By : @ChVivekTomar
+**☞ Maintained By : @MAHI_458**
 
-**☞ Want To Buy Owr Premium Rename Bot With Custom Caption Support Contact Me On @ChVivekTomar**
+**☞ Want To Buy Owr Premium Rename Bot With Custom Caption Support Contact Me On @MAHI_458**
 	""",reply_to_message_id = message.message_id ,  
 	reply_markup=InlineKeyboardMarkup(
-	 [[ InlineKeyboardButton("Vivek Projects" ,url="https://t.me/OfficialVivekProject") ]  ]))
+	 [[ InlineKeyboardButton("✰☆✩ 🅄🄿🄳🄰🅃🄴🅂  🄲🄷🄰🄽🄽🄴🄻 ✩☆✰" ,url="https://t.me/Amazon_Prime_Video_Officiall") ]  ]))
 
 
 @Client.on_message(filters.private &( filters.document | filters.audio | filters.video ))
@@ -35,7 +35,7 @@ async def send_doc(client,message):
        filesize = humanize.naturalsize(file.file_size)
        fileid = file.file_id
        await message.reply_text(
-       f"""__𝘞𝘩𝘢𝘵 𝘋𝘰 𝘠𝘰𝘶 𝘞𝘢𝘯𝘵 𝘔𝘦 𝘛𝘰 𝘋𝘰 𝘞𝘪𝘵𝘩 𝘛𝘩𝘪𝘴 𝘍𝘪𝘭𝘦?__\n**File Name** :- {filename}\n**File Size** :- {filesize}"""
+       f"""__𝐖𝐡𝐚𝐭 𝐒𝐡𝐚𝐥𝐥 𝐈 𝐖𝐚𝐧𝐭𝐞𝐝 𝐓𝐨 𝐃𝐨 𝐖𝐢𝐭𝐡 𝐓𝐡𝐢𝐬 𝐅𝐢𝐥𝐞 ㋛︎__\n**File Name** :- {filename}\n**File Size** :- {filesize}"""
        ,reply_to_message_id = message.message_id,
-       reply_markup = InlineKeyboardMarkup([[ InlineKeyboardButton("Rename 📝",callback_data = "rename")
-       ,InlineKeyboardButton("Cancel ❌",callback_data = "cancel")  ]]))
+       reply_markup = InlineKeyboardMarkup([[ InlineKeyboardButton("📝  Rename ",callback_data = "rename")
+       ,InlineKeyboardButton("✖️  Cancel ",callback_data = "cancel")  ]]))
